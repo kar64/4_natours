@@ -11666,7 +11666,6 @@ var bookTour = exports.bookTour = /*#__PURE__*/function () {
           return (0, _axios.default)("http://127.0.0.1:3000/api/v1/bookings/checkout-session/".concat(tourId));
         case 3:
           session = _context.sent;
-          console.log(session);
           _context.next = 7;
           return stripe.redirectToCheckout({
             sessionId: session.data.session.id
